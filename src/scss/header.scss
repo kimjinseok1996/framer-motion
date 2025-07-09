@@ -1,0 +1,42 @@
+#header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  transition: 0.2s;
+  padding: 38px 0;
+
+  &.activated {
+    background-color: #fff;
+
+    nav ul li a {
+      color: #000;
+    }
+  }
+
+  & > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      width: 152px;
+      height: auto;
+    }
+
+    nav {
+      ul {
+        display: flex;
+
+        li {
+          margin-left: 38px;
+
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
