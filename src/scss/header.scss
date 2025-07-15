@@ -3,9 +3,9 @@
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 9999;
+  z-index: var(--header-z-index);
   transition: 0.2s;
-  padding: 38px 0;
+  padding: 32px 0;
 
   &.activated {
     background-color: #fff;
@@ -39,4 +39,121 @@
       }
     }
   }
+}
+
+#mobile-header {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: var(--header-z-index);
+  padding: 26px 0;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      width: 102px;
+      height: auto;
+    }
+
+    .ham-menu {
+      width: 36px;
+      height: 26px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: start;
+
+      span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+
+        &:nth-child(2) {
+          top: 50%;
+          transform: translateY(-50%);
+          width: 80%;
+        }
+
+        &:nth-child(3) {
+          top: unset;
+          bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+#mobile-header-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--header-menu-z-index);
+  width: 78%;
+  height: 100vh;
+  background-color: #fff;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  will-change: transform;
+
+  nav {
+    margin-top: 24vh;
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      padding: 0;
+
+      li {
+        margin-bottom: 38px;
+
+        a {
+          color: #000;
+        }
+      }
+    }
+  }
+
+  #mobile-header-menu-close {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    width: 36px;
+    height: 26px;
+
+    button {
+      width: 100%;
+      height: 100%;
+
+      span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+        transform: rotate(45deg);
+        margin-top: -3px;
+
+        &:nth-child(2) {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+}
+
+#mobile-header-menu-cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--header-menu-cover-z-index);
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
 }

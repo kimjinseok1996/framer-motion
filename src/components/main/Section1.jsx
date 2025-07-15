@@ -4,14 +4,14 @@ import Container from "../Container";
 import FramerMotion from "../utills/FramerMotion";
 
 const h1Style = {
-  initial: { opacity: 0, y: -10 },
+  initial: { opacity: 0, y: -12 },
   whileInView: { opacity: 1, y: 0 },
   transition: { duration: 0.4 },
   viewport: { once: true, amount: 1 },
 };
 
 const h5Style = {
-  initial: { opacity: 0, y: -10 },
+  initial: { opacity: 0, y: -12 },
   whileInView: { opacity: 1, y: 0 },
   transition: { delay: 0.2, duration: 0.4 },
   viewport: { once: true, amount: 1 },

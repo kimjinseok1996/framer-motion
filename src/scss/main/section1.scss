@@ -33,11 +33,28 @@
     position: relative;
 
     h1 {
-      color: #fff;
+      font-size: 3vw;
+      margin-bottom: 2vw;
+      color: var(--main-color);
+      font-weight: 500;
+
+      @media (max-width: 768px) {
+        font-size: 8vw;
+      }
     }
 
     h5 {
+      font-size: 1.5vw;
+      font-weight: 400;
       color: #fff;
+
+      @media (max-width: 768px) {
+        font-size: 5vw;
+      }
     }
+  }
+
+  @media (max-width: 768px) {
+    padding: 60vw 0 40vw 0;
   }
 }

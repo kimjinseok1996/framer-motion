@@ -1,31 +1,9 @@
 @import url("https://cdn.jsdelivr.net/npm/pretendard/dist/web/static/pretendard-subset.css");
 :root {
-  --main-color: #007aff;
-  --main-bold-color: #156398;
-  //--main-bold-color: #156398;
-  //--main-color: #187fc5;
-  //--main-color: #1829fb;
-  //--main-color: #fae017;
-  --second-color: #ddd;
-  //--third-color: #282d4b;
-  --third-color: #282d4b;
-  --red-color: #dc3545;
-  --btn-active-color: #3865e0;
-  --loading-cover-z-index: 9999;
-  --loading-loader-z-index: 9998;
-  --map-view-z-index: 9996;
-  --location-view-z-index: 9995;
-  --modal-sub-contents-z-index: 9994;
-  --modal-sub-cover-z-index: 9993;
-  --modal-pay-module-cover-z-index: 9992;
-  --modal-contents-z-index: 9991;
-  --modal-cover-z-index: 9990;
-  --bottom-nav-z-index: 9989;
-  --top-menu-z-index: 9988;
-  --company-list-header-z-index: 9987;
-  --map-warning-msg-z-index: 2;
-  --map-warning-cover-z-index: 1;
-  --box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  --main-color: #fae017;
+  --header-z-index: 7777;
+  --header-menu-cover-z-index: 7778;
+  --header-menu-z-index: 7779;
 }
 
 * {
@@ -53,4 +31,11 @@ a {
 
 li {
   list-style: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
 }
